@@ -11,8 +11,10 @@ const Inventario = ({materiales}) => {
   return (
     <>
       <Layout>
+        
        {materiales.map((material)=>(
          <h1 key={material._id} >{material.nombre}</h1>
+
        ))}
       </Layout>
     </>
