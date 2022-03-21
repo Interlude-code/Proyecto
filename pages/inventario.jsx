@@ -1,13 +1,11 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
-import Materialhandler from './api/hello'
 import db from '../db/connection'
 import Material from '../models/material'
 
 
 
 const Inventario = ({materiales}) => {
-  console.log(materiales)
   return (
     <>
       <Layout>

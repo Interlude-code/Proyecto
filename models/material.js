@@ -17,13 +17,13 @@ const materialSchema = new mongoose.Schema({
         type : String,
     },
     stock : {
-        type : Number,
-        default : 0
+        type : String,
     },
     precio : {
-        type : Number,
-        default : 0
-    }
+        type : String,
+   
+    },
+    descripcion: String
 })
 
 export default mongoose.models.Material || mongoose.model("Material", materialSchema);
