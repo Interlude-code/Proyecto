@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.thead-color{
+    background-color: #F4F4F4;
+  }
+  
+  .tbody-border{
+    border-bottom: 1px solid;
+    border-color: #ebebeb;
+  }
+  
+  .encabezado-tablas{
+    color: #252323;
+  }
+  
+  .texto-tablas{
+    color: #252323;
+    font-size: 14px;
+  }
+      

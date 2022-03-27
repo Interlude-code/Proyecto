@@ -2,15 +2,17 @@ import { Box, Dialog, DialogContent, DialogTitle } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
 import useFormData from '../hooks/useFormData';
 import { postMaterial } from '../api/postMaterial';
+import { useMaterial } from '../context/materialContext';
 
 const Formulario = () => {
 
+
+    const {materiales, setMateriales} =  useMaterial()
     const{form, formData, updateFormData} = useFormData();
   
     const [open, setOpen] = useState(false);
     const [scroll, setScroll] = useState('paper');  
 
-  
 
     const handleClickOpen = (scrollType) => () => {
       setOpen(true);
@@ -33,13 +35,10 @@ const Formulario = () => {
   
     const submitForm = async (e) => {
       e.preventDefault();
-      await postMaterial(formData);
+      await postMaterial(formData,materiales,setMateriales);
       handleClose()
     }
-  
-  
-  
-    
+   
   
     return (
       <div>
@@ -104,9 +103,13 @@ const Formulario = () => {
                         <label>Categoria</label>
                         <select required className="text-sm pl-2 w-full font-light rounded-sm h-7 input-perfil border cursor-pointer" name="categoria" defaultValue="Categoria">
                             <option disabled type="String" value="">Categoria</option>
-                            <option type="String">Pintura</option>
-                            <option type="String">CAJA</option>
-                            <option type="String">METRO</option>
+                            <option type="String">HIDRO-SANITARIO</option>
+                            <option type="String">PINTURAS</option>
+                            <option type="String">LOCATIVO</option>
+                            <option type="String">PINTURAS</option>
+                            <option type="String">ELECTRICO</option>
+                            <option type="String">FERRETERIA</option>
+                            <option type="String">AIRE-ACONDICIONADO</option>
                         </select>
                       </div>
                       <div className="flex justify-center w-full ">

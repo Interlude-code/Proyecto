@@ -14,11 +14,12 @@ export default async function  Materialhandler(req, res) {
   switch (method) {
     case 'POST':
         const nuevoMaterial = new Material({
-          nombre    : body.nombre,
-          unidad    : body.unidad,
-          categoria : body.categoria,
-          precio    : body.precio,
-          stock     : body.stock,
+          nombre     : body.nombre,
+          unidad     : body.unidad,
+          categoria  : body.categoria,
+          precio     : body.precio,
+          stock      : body.stock,
+          descripcion: body.descripcion
         })
         await nuevoMaterial.save()
         res.status(201).json({ success: true, data: nuevoMaterial })

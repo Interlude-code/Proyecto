@@ -2,8 +2,7 @@ import axios from "axios";
 
 
 
-export const postMaterial = (material)=>{
-    
+export const postMaterial = (material,materiales,setMateriales)=>{
 
 const options = {
   method: 'POST',
@@ -13,7 +12,13 @@ const options = {
 };
 
 axios.request(options).then(function (response) {
-  console.log(response.data);
+  // const {data} = response.data
+  // const update = materiales
+  // let update2 = update.push(data)
+  // console.log(materiales);
+  // console.log(data)
+  // console.log(update2)
+  // setMateriales(update2)
 }).catch(function (error) {
   console.error(error);
 });

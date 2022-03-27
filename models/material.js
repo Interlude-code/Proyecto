@@ -15,6 +15,7 @@ const materialSchema = new mongoose.Schema({
     },
     categoria: {
         type : String,
+        enum : ["HIDRO-SANITARIO","PINTURAS","LOCATIVO","ELECTRICO","FERRETERIA","AIRE-ACONDICIONADO"],
     },
     stock : {
         type : String,
@@ -23,7 +24,10 @@ const materialSchema = new mongoose.Schema({
         type : String,
    
     },
-    descripcion: String
+    descripcion: {
+        type : String,
+        required : true
+    }
 })
 
 export default mongoose.models.Material || mongoose.model("Material", materialSchema);

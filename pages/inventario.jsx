@@ -1,17 +1,24 @@
-import React from 'react'
+import { useEffect, useState } from 'react'
 import Layout from '../components/Layout/Layout'
 import db from '../db/connection'
 import Material from '../models/material'
+import TablaInventario from '../components/TablaInventario'
+import { useMaterial } from '../context/materialContext'
 
 
 
-const Inventario = ({materiales}) => {
+const Inventario = ({materialesApi}) => {
+ 
+
+ const {materiales, setMateriales} =  useMaterial()
+  useEffect(()=>{
+    setMateriales(materialesApi)
+  },[])
+  
   return (
     <>
       <Layout>
-       {materiales.map((material)=>(
-         <h1 key={material._id} >{material.nombre}</h1>
-       ))}
+         <TablaInventario materiales={materiales}/>
       </Layout>
     </>
   )
@@ -29,7 +36,7 @@ export const getServerSideProps = async (ctx) => {
   });
   return {
     props: {
-      materiales 
+      materialesApi : materiales
     }
   }
 }

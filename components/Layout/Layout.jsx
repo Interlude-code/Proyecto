@@ -7,7 +7,6 @@ const Layout = ({children}) => {
         <div className='max-w-screen-2xl m-auto'>
             <Navbar/>
             {children}
-            <footer>footer</footer>
         </div>
     </div>
   )
