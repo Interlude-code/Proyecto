@@ -1,0 +1,11 @@
+.text-color {
+    color: #1E439D;
+}
+
+/* .hover-a:hover {
+    color: #8c94a9;
+} */
+
+.text-color a:hover{
+    color: #8c94a9
+}

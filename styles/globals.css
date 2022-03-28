@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.thead-color{
+.thead-color{ 
     background-color: #F4F4F4;
   }
   
@@ -19,4 +19,3 @@
     color: #252323;
     font-size: 14px;
   }
-      
