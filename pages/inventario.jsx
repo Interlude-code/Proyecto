@@ -13,6 +13,7 @@ const Inventario = ({materialesApi}) => {
  const {materiales, setMateriales} =  useMaterial()
   useEffect(()=>{
     setMateriales(materialesApi)
+    console.log(materialesApi);
   },[])
   
   return (

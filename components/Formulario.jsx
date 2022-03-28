@@ -7,7 +7,7 @@ import { useMaterial } from '../context/materialContext';
 const Formulario = () => {
 
 
-    const {materiales, setMateriales} =  useMaterial()
+    const {setMateriales} =  useMaterial()
     const{form, formData, updateFormData} = useFormData();
   
     const [open, setOpen] = useState(false);
@@ -35,7 +35,7 @@ const Formulario = () => {
   
     const submitForm = async (e) => {
       e.preventDefault();
-      await postMaterial(formData,materiales,setMateriales);
+      await postMaterial(formData,setMateriales);
       handleClose()
     }
    
