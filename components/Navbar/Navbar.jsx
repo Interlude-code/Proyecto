@@ -3,6 +3,7 @@ import sodexoLogo from '../../public/pngwing.com.png'
 import Image from 'next/image'
 import Formulario from '../Formulario'
 import styles from './Navbar.module.css'
+import { ToastContainer } from 'react-toastify'
 
 const Navbar = () => {
   return (
@@ -28,6 +29,17 @@ const Navbar = () => {
             <Formulario/>
           
           </div>
+          <ToastContainer
+            position="top-right"
+            autoClose={1000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            />
     </div>
   )
 }
