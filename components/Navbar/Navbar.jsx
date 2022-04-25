@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import sodexoLogo from '../../public/pngwing.com.png'
 import Image from 'next/image'
-import Formulario from '../Formulario'
+import FormularioCrearProducto from '../FormularioCrearProducto'
 import styles from './Navbar.module.css'
 import { ToastContainer } from 'react-toastify'
 
@@ -26,7 +26,7 @@ const Navbar = () => {
               </a>
            
             </Link>
-            <Formulario/>
+            <FormularioCrearProducto/>
           
           </div>
           <ToastContainer

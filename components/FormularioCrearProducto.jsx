@@ -4,7 +4,7 @@ import useFormData from '../hooks/useFormData';
 import { postMaterial } from '../api/postMaterial';
 import { useMaterial } from '../context/materialContext';
 
-const Formulario = () => {
+const FormularioCrearProducto = () => {
 
 
     const {setMateriales} =  useMaterial()
@@ -125,4 +125,4 @@ const Formulario = () => {
 }
 
 
-export default Formulario
+export default FormularioCrearProducto

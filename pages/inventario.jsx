@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect  } from 'react'
 import Layout from '../components/Layout/Layout'
 import db from '../db/connection'
 import Material from '../models/material'
@@ -13,7 +13,6 @@ const Inventario = ({materialesApi}) => {
  const {materiales, setMateriales} =  useMaterial()
   useEffect(()=>{
     setMateriales(materialesApi)
-    console.log(materialesApi);
   },[])
   
   return (
