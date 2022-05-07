@@ -4,25 +4,24 @@ import db from '../db/connection'
 import Material from '../models/material'
 import TablaInventario from '../components/TablaInventario/TablaInventario'
 import { useMaterial } from '../context/materialContext'
+import { NewDataTable } from '../components/TablaInventario/NewDataTable'
 
 
 
 const Inventario = ({materialesApi}) => {
  
-
- const {materiales, setMateriales} =  useMaterial()
-  useEffect(()=>{
-    setMateriales(materialesApi)
-  },[])
   
+
   return (
     <>
       <Layout>
-         <TablaInventario materiales={materiales}/>
+         <NewDataTable materiales={materialesApi}/>
       </Layout>
     </>
   )
 }
+
+
 
 
 export const getServerSideProps = async (ctx) => {
@@ -32,7 +31,7 @@ export const getServerSideProps = async (ctx) => {
   const materiales = result.map((doc) => {
     const material = doc.toObject();
     material._id = material._id.toString();
-    return material;
+    return material
   });
   return {
     props: {

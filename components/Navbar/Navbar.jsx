@@ -12,7 +12,7 @@ const Navbar = () => {
             <Image src={sodexoLogo} width={250} height={100} alt="sodexo-logo"/>
           </div>
           <div className={`flex w-full justify-end text-sm space-x-20 font-medium mr-5 ${styles['text-color']} rounded-lg items-center h-12`}>
-            <Link Link href="/">
+            <Link href="/">
               Inicio
             </Link>
             <Link href="/inventario">
