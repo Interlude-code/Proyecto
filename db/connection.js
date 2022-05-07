@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 
-const connectionString = "mongodb+srv://interlude:123456abc@pascual.5em1z.mongodb.net/ProyectoGrado?retryWrites=true&w=majority"
+const connectionString = process.env.NEXT_PUBLIC_DB_KEY
 
 const db = ()=>{
     mongoose.connect(connectionString)

@@ -6,7 +6,7 @@ export const DeleteMaterial = (id,setMateriales)=>{
 
 const options = {
   method: 'DELETE',
-  url: `http://localhost:3000/api/delete-material/${id}`,
+  url: `${process.env.NEXT_PUBLIC_BACK_URL}/api/delete-material/${id}`,
   headers: {'Content-Type': 'application/json'}
 };
 

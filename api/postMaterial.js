@@ -6,7 +6,7 @@ export const postMaterial = (material,setMateriales)=>{
 
 const options = {
   method: 'POST',
-  url: 'http://localhost:3000/api/hello',
+  url: `${process.env.NEXT_PUBLIC_BACK_URL}/api/hello`,
   headers: {'Content-Type': 'application/json'},
   data: material
 };
