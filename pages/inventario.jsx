@@ -39,7 +39,7 @@ export const getStaticProps = async (ctx) => {
     props: {
       materialesApi : materiales
     },
-    revalidate: 10
+    revalidate: 2
   }
 }
 
