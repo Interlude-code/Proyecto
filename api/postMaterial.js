@@ -6,7 +6,7 @@ export const postMaterial = (material,setMateriales)=>{
 
 const options = {
   method: 'POST',
-  url: `/api/hello`,
+  url: `/api/[id]`,
   headers: {'Content-Type': 'application/json'},
   data: material
 };
