@@ -1,5 +1,5 @@
-import Material from '../../models/material'
-import db from '../../db/connection'
+import Material from '../../../models/material'
+import db from '../../../db/connection'
 
 
 
@@ -13,19 +13,6 @@ export default async function  Materialhandler(req, res) {
   } = req
 
   switch (method) {
-    case 'POST':
-        const nuevoMaterial = new Material({
-          nombre     : body.nombre,
-          unidad     : body.unidad,
-          categoria  : body.categoria,
-          precio     : body.precio,
-          stock      : body.stock,
-          descripcion: body.descripcion
-        })
-        await nuevoMaterial.save()
-        res.status(201).json({ success: true, data: nuevoMaterial })
-    
-      break
     case 'PATCH':
       await Material.findByIdAndUpdate(id ,{
           nombre     : body.nombre,
@@ -49,7 +36,7 @@ export default async function  Materialhandler(req, res) {
           res.status(401).json("errro")
         }
       }) 
-      break
+    break
 
     default:
       res.status(405).end(`Method ${method} Not Allowed`)

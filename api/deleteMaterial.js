@@ -6,7 +6,7 @@ export const DeleteMaterial = (id,setMateriales)=>{
 
 const options = {
   method: 'DELETE',
-  url: `/api/${id}`,
+  url: `/api/users/${id}`,
   headers: {'Content-Type': 'application/json'}
 };
 

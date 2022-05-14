@@ -7,7 +7,7 @@ export const updateMaterial=(data ,setMateriales )=>{
 
     const options = {
       method: 'PATCH',
-      url: `/api/${data._id}`,
+      url: `/api/users/${data._id}`,
       headers: {'Content-Type': 'application/json'},
       data:data
     };
