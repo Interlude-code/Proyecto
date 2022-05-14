@@ -1,7 +1,7 @@
 import { Box, Dialog, DialogContent, DialogTitle,Button } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
 import useFormData from '../hooks/useFormData';
-import { postMaterial } from '../api/postMaterial';
+import { postMaterial } from '../connectApi/postMaterial';
 import { useMaterial } from '../context/materialContext';
 
 const FormularioCrearProducto = () => {

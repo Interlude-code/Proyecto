@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Button, Dialog, Stack } from '@mui/material';
 import { DataGrid , GridToolbar , esES , GridToolbarContainer , GridActionsCellItem  } from '@mui/x-data-grid';
-import { updateMaterial } from '../../api/updateMaterial';
+import { updateMaterial } from '../../connectApi/updateMaterial';
 import { useMaterial } from '../../context/materialContext';
 import FormularioCrearProducto from '../FormularioCrearProducto';
 import { Delete } from '@mui/icons-material';
-import { DeleteMaterial } from '../../api/deleteMaterial';
+import { DeleteMaterial } from '../../connectApi/deleteMaterial';
 
 
 
