@@ -26,7 +26,7 @@ const Inventario = ({materialesApi}) => {
 
 
 
-export const getServerSideProps = async (ctx) => {
+export const getStaticProps = async (ctx) => {
   await db()
   const result =  await Material.find({})
 
