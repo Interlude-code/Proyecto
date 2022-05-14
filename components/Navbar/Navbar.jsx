@@ -4,6 +4,7 @@ import Image from 'next/image'
 import FormularioCrearProducto from '../FormularioCrearProducto'
 import styles from './Navbar.module.css'
 import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
   return (

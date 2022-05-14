@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image'
 import Link from 'next/link'
 import { ToastContainer } from 'react-toastify'
-import FormularioCrearProducto from '../FormularioCrearProducto'
+
 
 const pages = ['inicio', 'inventario', 'proveedores'];
 
