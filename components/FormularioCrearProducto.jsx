@@ -1,4 +1,4 @@
-import { Box, Dialog, DialogContent, DialogTitle } from '@mui/material';
+import { Box, Dialog, DialogContent, DialogTitle,Button } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
 import useFormData from '../hooks/useFormData';
 import { postMaterial } from '../api/postMaterial';
@@ -42,13 +42,9 @@ const FormularioCrearProducto = () => {
   
     return (
       <div>
-          <div onClick={handleClickOpen('paper')} className="wrapper cursor-pointer">
-                <div className="button-new">
-                  <div className="icon-new self-center flex justify-between">
-                    <span>Nuevo Material</span>
-                  </div>
-                </div>
-          </div>
+          <Button onClick={handleClickOpen('paper')} sx={{ my: 2, color: '#1E439D', display: 'block' }}>
+            Nuevo Material
+          </Button>
         
           <Dialog
               className= "bg-black bg-opacity-50"
@@ -106,7 +102,6 @@ const FormularioCrearProducto = () => {
                             <option type="String">HIDRO-SANITARIO</option>
                             <option type="String">PINTURAS</option>
                             <option type="String">LOCATIVO</option>
-                            <option type="String">PINTURAS</option>
                             <option type="String">ELECTRICO</option>
                             <option type="String">FERRETERIA</option>
                             <option type="String">AIRE-ACONDICIONADO</option>

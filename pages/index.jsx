@@ -32,17 +32,17 @@ export default function Home() {
               <a className="block underline text-blue-500" href='https://www.iconstruye.com.co/includes/inicio.aspx?ReturnUrl=%2f' target="_blank" rel="noreferrer" >Iconstruye</a>
               <h1 className='font-bold'>Espíritu de Servicio</h1>
               <div className="mr-5  text-justify">
-                <text>satisfacer las necesidades particulares de nuestros Clientes y Consumidores, haciendo de la interacción con ellos una experiencia memorable para asegurar el éxito de nuestra misión “Mejorar la calidad de vida diaria”.
+                <p>satisfacer las necesidades particulares de nuestros Clientes y Consumidores, haciendo de la interacción con ellos una experiencia memorable para asegurar el éxito de nuestra misión “Mejorar la calidad de vida diaria”.
                 Espíritu de Equipo
                 Las habilidades y cualidades de cada persona se combinan con las de otros miembros del equipo de trabajo, asegurando así el éxito de Sodexo.
                 El trabajo en equipo está basado en el respeto hacia los otros, respeto de las reglas, ayuda mutua y capacidad de escuchar
-                .</text>
+                .</p>
                 <br/>
                 <h1 className='font-bold'>Espíritu de Progreso</h1>
-                <text>
+                <p>
                 La voluntad, pero además, la fuerte convicción de que podemos mejorar la situación presente.
                   La autocrítica, la certeza de que cada problema tiene solución, aceptación de evaluar nuestras competencias y compararlas con colegas y/o competidores.
-                </text>
+                </p>
               </div>
               
           </div>

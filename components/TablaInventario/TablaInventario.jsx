@@ -42,7 +42,7 @@ const TablaInventario = ({materiales}) => {
     )
 }
 
-const FilasTablaProyectos = ({material }) =>{
+const FilasTablaProyectos = ({ material }) =>{
 
     const [openDialog,setOpenDialog]=useState(false)
     const {setMateriales} =  useMaterial()

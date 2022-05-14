@@ -11,11 +11,15 @@ import { NewDataTable } from '../components/TablaInventario/NewDataTable'
 const Inventario = ({materialesApi}) => {
  
   
-
+  const { setMateriales} =  useMaterial()
+  useEffect(()=>{
+    setMateriales(materialesApi)
+  },[])
+  
   return (
     <>
       <Layout>
-         <NewDataTable materiales={materialesApi}/>
+         <NewDataTable />
       </Layout>
     </>
   )

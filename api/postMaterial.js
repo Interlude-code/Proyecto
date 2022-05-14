@@ -13,7 +13,10 @@ const options = {
 
 axios.request(options).then(function (response) {
   const {data} = response.data
-  setMateriales(materiales => [...materiales, data])
+  setMateriales(materiales =>{
+     console.log([...materiales, data])
+     return [...materiales, data]
+  }) 
   toast.success(`Creado con exito ${material.nombre}`, {
     position: "top-right",
     autoClose: 1500,
