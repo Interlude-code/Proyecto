@@ -2,7 +2,6 @@ import { useEffect  } from 'react'
 import Layout from '../components/Layout/Layout'
 import db from '../db/connection'
 import Material from '../models/material'
-import TablaInventario from '../components/TablaInventario/TablaInventario'
 import { useMaterial } from '../context/materialContext'
 import { NewDataTable } from '../components/TablaInventario/NewDataTable'
 
